@@ -1,0 +1,45 @@
+.header{
+    display: flex;/*let the container take the desired space*/
+    justify-content: space-between;/*put space between the compo*/
+    align-items: center;
+    position: sticky;/*take the header and stick it to top even we scroll down*/
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    width: 100%;
+
+}
+.header_icon {
+    object-fit: contain;
+    height: 50px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
+
+}
+
+.header_center{
+    align-items: center;
+    display: flex;
+    flex: 1;
+    max-width: fit-content;/*read online*/
+    padding: 10px;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 999px;
+}
+.header_center>input{
+    border: none;/*this removes the text area rectangle box from inside of the search*/
+    width: 250px;
+    padding: 10px;
+    outline-width: 0px; /*this removes the blue outline whenever we click to type */
+}
+
+.header_right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15vw;
+    margin-right:80px ;
+}
